@@ -8,7 +8,10 @@ function Navbar() {
         display: "flex",
         gap: 4,
         justifyContent: "center",
-        marginBottom: "30px"
+        marginBottom: "30px",
+        border: "1px solid gray",
+        padding: "20px",
+        background: "cornsilk"
       }}
     >
       <div>

@@ -9,7 +9,7 @@ function Login() {
   }
   return (
     <div>
-      Login
+      Please Login to continue with Application
       <div>
         <button onClick={handleSignIn}>SIGN IN</button>
       </div>
