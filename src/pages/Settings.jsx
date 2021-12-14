@@ -2,12 +2,12 @@ import { useContext } from "react";
 import { Redirect } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 
-function Dashboard() {
+function Settings() {
   const [auth, { handleSignout }] = useContext(AuthContext);
 
   return (
     <div>
-      Welcome to Dashboard
+      Settings
       <div>
         <button onClick={handleSignout}>SIGN OUT</button>
       </div>
@@ -15,4 +15,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default Settings;

@@ -2,6 +2,7 @@ import { Route, Switch } from "react-router-dom";
 import Dashboard from "../pages/Dashboard";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
+import Settings from "../pages/Settings";
 import PrivateRoute from "./PrivateRoute";
 
 function Routes() {
@@ -16,6 +17,10 @@ function Routes() {
         </Route>
         <PrivateRoute exact={true} path="/dashboard">
           <Dashboard />
+          {/* <Settings /> */}
+        </PrivateRoute>
+        <PrivateRoute exact path="/dashboard/settings">
+          <Settings />
         </PrivateRoute>
       </Switch>
     </>

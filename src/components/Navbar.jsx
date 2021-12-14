@@ -12,6 +12,9 @@ function Navbar() {
       <div>
         <Link to="/dashboard">Dashboard</Link>
       </div>
+      <div>
+        <Link to="/dashboard/settings">Settings</Link>
+      </div>
     </div>
   );
 }
