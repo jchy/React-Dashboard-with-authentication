@@ -1,0 +1,9 @@
+.link {
+  text-decoration: none;
+  width: 100px;
+  background: turquoise;
+  padding: 10px;
+  color: red;
+  border: 1px solid black;
+  border-radius: 10px;
+}

@@ -1,22 +1,20 @@
 import { useContext } from "react";
 import { Redirect } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
-import { Link } from "react-router-dom";
 
-function Settings() {
+function UserDetails() {
   const [auth, { handleSignout }] = useContext(AuthContext);
 
   return (
     <div>
-      Settings
+      <h2>Uder Details</h2>
+      <h3>Jaswant Chaudhary</h3>
+      <p>REC Sonbhadra</p>
       <div>
         <button onClick={handleSignout}>SIGN OUT</button>
-      </div>
-      <div>
-        <Link to="/dashboard/settings/userdetails">User Details</Link>
       </div>
     </div>
   );
 }
 
-export default Settings;
+export default UserDetails;

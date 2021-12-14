@@ -3,6 +3,7 @@ import Dashboard from "../pages/Dashboard";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Settings from "../pages/Settings";
+import UserDetails from "../pages/UserDetails";
 import PrivateRoute from "./PrivateRoute";
 
 function Routes() {
@@ -19,8 +20,11 @@ function Routes() {
           <Dashboard />
           {/* <Settings /> */}
         </PrivateRoute>
-        <PrivateRoute exact path="/dashboard/settings">
+        <PrivateRoute exact={true} path="/dashboard/settings">
           <Settings />
+        </PrivateRoute>
+        <PrivateRoute exact={true} path="/dashboard/settings/userdetails">
+          <UserDetails />
         </PrivateRoute>
       </Switch>
     </>
