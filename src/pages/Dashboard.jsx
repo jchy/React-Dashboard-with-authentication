@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 
 function Dashboard() {
@@ -10,6 +11,9 @@ function Dashboard() {
       Welcome to Dashboard
       <div>
         <button onClick={handleSignout}>SIGN OUT</button>
+      </div>
+      <div>
+        <Link to="/dashboard/settings">Settings</Link>
       </div>
     </div>
   );
